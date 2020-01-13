@@ -59,10 +59,12 @@ def reduce_to_all_true(source_array)
   while index < source_array.length do
       if !source_array[index]
         answer = !!nil
+      else
+        answer = !!5
       end
       index += 1
   end
-  return !!5
+  return answer
 end
 
 def reduce_to_any_true(source_array)
